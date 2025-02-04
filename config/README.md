@@ -59,6 +59,7 @@ KEY_INPUTS:
 ```
 
 Using the above example, a user can enter `a` or `jump` and the `a` key will be pressed.
+
 You can add as many triggers as you like, and they don't need to make sense:
 ```yaml
 up:
@@ -67,7 +68,7 @@ up:
 ```
 In this example, a user can type `b` or `foobar` and the `up` key will be pressed.
 
-**_NOTE:_**: If you add multiple inputs for the same key, the last
+**_NOTE:_** If you add multiple inputs for the same key, the last
 occurrence will take precedence. 
 
 A full list of supported keys can be found here:
