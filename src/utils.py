@@ -16,6 +16,7 @@ def clamp(val, min_val, max_val):
     else:
         return val
 
+
 def invert_dictionary(d):
     """Takes a dictionary with a list of values and inverts the dictionary.
 
