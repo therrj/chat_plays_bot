@@ -36,6 +36,10 @@ If you want to effectively disable the duration functionality, you can set
 ## Key Input Mappings
 `chat_plays_bots` allows you to customize, add, or remove any key combinations you see fit
 
+**_NOTE:_** If you'd like your chat to be able to spam controls more frequently, you can
+enter multiple values for each key action. Users can then alternate between them. This
+is unfortunately a limitation by Twitch
+
 The format is:
 ```yaml
 key_action:
