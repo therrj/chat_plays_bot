@@ -74,6 +74,7 @@ a feature request!
 ### Short Term Support
 - Add more protection against bad configs
 - Create a cleaner release mechanism so users can just download the exe
+- Add better package management for development
 
 ### Potential Future Functionality Additions
 - Possibly add support for custom durations per key
