@@ -17,10 +17,10 @@ class Config():
         self.nick = yaml_config[TWITCH_USERNAME]
         self.channel = yaml_config[TWITCH_CHANNEL]
 
-        self.key_press_duration = int(yaml_config[KEY_PRESS_DURATION])
-        self.key_press_scale_factor = int(yaml_config[KEY_PRESS_SCALE_FACTOR])
-        self.key_press_duration_min = int(yaml_config[KEY_PRESS_DURATION_MIN])
-        self.key_press_duration_max = int(yaml_config[KEY_PRESS_DURATION_MAX])
+        self.key_press_duration = yaml_config.get(KEY_PRESS_DURATION, KEY_PRESS_DURATION_DEFAULT)
+        self.key_press_scale_factor = yaml_config.get(KEY_PRESS_SCALE_FACTOR, KEY_PRESS_SCALE_FACTOR_DEFAULT)
+        self.key_press_duration_min = yaml_config.get(KEY_PRESS_DURATION_MIN, KEY_PRESS_DURATION_MIN_DEFAULT)
+        self.key_press_duration_max = yaml_config.get(KEY_PRESS_DURATION_MAX, KEY_PRESS_DURATION_MAX_DEFAULT)
 
         # The config syntax should be easier for user inputs, but for matching
         # it's easier to flip the dictionary, so we'll do that now.

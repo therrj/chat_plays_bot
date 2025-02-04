@@ -1,0 +1,62 @@
+#################
+### Log level ###
+#################
+# One of DEBUG, INFO, WARNING, ERROR, CRITICAL
+LOG_LEVEL: DEBUG
+
+##################################
+### Twitch Connection Settings ###
+##################################
+# Twitch user tokens were generated for
+TWITCH_USERNAME: ""
+# Auth Token. Log into the account you want
+# to generate the token for, go to https://twitchtokengenerator.com/
+# and add the Access Token and Client ID information here
+TWITCH_ACCESS_TOKEN: ""
+# Channel the bot should join
+TWITCH_CLIENT_ID: ""
+# Twitch channel you want to monitor messages in
+TWITCH_CHANNEL: ""
+
+##########################
+### Key Press Settings ###
+##########################
+# The length the key will be pressed is duration * scale factor
+# Set the default key press duration. Default is 1
+KEY_PRESS_DURATION: 1
+# Set the keypress duration scale factor. Default is 0.05
+KEY_PRESS_SCALE_FACTOR: 0.05
+# Set the minimum duration value. Default is 1
+KEY_PRESS_DURATION_MIN: 1
+# Set the maximum duration value. Default is 10
+KEY_PRESS_DURATION_MAX: 10
+
+##########################
+### Key Input Mappings ###
+##########################
+# Note: these are not case sensitive.
+# Format is
+# key_action:
+#   - text
+#   - to
+#   - trigger
+#   - key
+# ie:
+# left:
+#   - l
+#   - left
+# With the above, if someone types "l" or "left" the "left"
+# key will be triggered.
+# Note: special characters (ie @ or *) will need to be quoted.
+# Supported keys can be found here:
+# https://github.com/learncodebygaming/pydirectinput/blob/master/pydirectinput/__init__.py#L48
+KEY_INPUTS:
+  left:
+    - l
+    - left
+  right:
+    - r
+    - right
+  a:
+    - a
+    - jump

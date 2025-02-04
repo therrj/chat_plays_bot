@@ -8,6 +8,7 @@ import utils
 
 LOGGER = logging.getLogger("ChatPlaysBot")
 
+
 class TwitchBot(commands.Bot):
 
     def __init__(

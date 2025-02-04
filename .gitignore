@@ -1,2 +1,4 @@
 .idea
 src/config.yaml
+__pycache__
+build
